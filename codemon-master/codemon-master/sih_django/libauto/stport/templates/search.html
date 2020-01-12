@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Hello, world!</title> 
+  </head>
+   <body>
+    {% block content %}
+     {% if student_info %} 
+     <ol> {% for stud in student_info %} 
+      <li>student_id:{{stud.student_name}}</li>
+      <h1>{{uname}}</h1>
+        {% endfor %}
+         </ol> 
+       {% endif %} 
+    {% endblock %}
+     </body>
+</html>
